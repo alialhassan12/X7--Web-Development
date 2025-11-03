@@ -3,26 +3,1590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Presentation</title>
+    <title>Introduction to Laravel</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="presentation-container">
         <!-- Slide 1 -->
         <div class="slide active">
-            <h1>Your Title Here</h1>
+            <h1>Introduction to Laravel</h1>
+            <h2 style="text-align: center; color: #F9322C; border: none; padding: 0; margin-bottom: 20px;">The PHP Framework for Web Artisans</h2>
             <p style="text-align: center; font-size: 1.4em; color: #64748b; margin-bottom: 40px;">
-                Your subtitle or description goes here
+                Laravel is a web application framework with expressive, elegant syntax.
+                We believe development must be an enjoyable and creative experience to be truly fulfilling.
             </p>
 
             <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p>Add your content here</p>
+                <p style="font-size: 1.3em; line-height: 1.8; color: #475569;">
+                    Laravel attempts to take the pain out of development by easing common tasks used in most web projects,
+                    such as authentication, routing, sessions, and caching.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2: What is Laravel & Why Learn It -->
+        <div class="slide">
+            <h2>What is Laravel?</h2>
+
+            <div style="margin-bottom: 40px;">
+                <p style="font-size: 1.3em; line-height: 1.8; color: #334155;">
+                    <strong style="color: #FF2D20;">Laravel</strong> is a free, open-source PHP web framework created by Taylor Otwell in 2011.
+                    It follows the Model-View-Controller (MVC) architectural pattern and is designed to make web development easier and more enjoyable.
+                </p>
+            </div>
+
+            <h3 style="color: #FF2D20;">Why Learn Laravel?</h3>
+            <div class="feature-grid" style="margin-bottom: 40px;">
+                <div class="feature-card">
+                    <h4>🚀 Industry Leader</h4>
+                    <p>Most popular PHP framework with massive community support and extensive ecosystem</p>
+                </div>
+                <div class="feature-card">
+                    <h4>💼 Career Opportunities</h4>
+                    <p>High demand for Laravel developers with competitive salaries worldwide</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⚡ Developer Productivity</h4>
+                    <p>Built-in features reduce development time by 40-60% compared to raw PHP</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🏢 Enterprise Ready</h4>
+                    <p>Powers applications for Fortune 500 companies, startups, and everything in between</p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20;">Laravel's Importance in Web Development</h3>
+            <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 4px solid #FF2D20; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; text-align: center;">
+                    <div>
+                        <div style="font-size: 3em; font-weight: bold; color: #FF2D20; margin-bottom: 10px;">2M+</div>
+                        <p style="font-size: 1.2em; color: #475569; margin: 0;">Websites Built</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3em; font-weight: bold; color: #FF2D20; margin-bottom: 10px;">77K+</div>
+                        <p style="font-size: 1.2em; color: #475569; margin: 0;">GitHub Stars</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3em; font-weight: bold; color: #FF2D20; margin-bottom: 10px;">1.5M+</div>
+                        <p style="font-size: 1.2em; color: #475569; margin: 0;">Developers Worldwide</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 3em; font-weight: bold; color: #FF2D20; margin-bottom: 10px;">#1</div>
+                        <p style="font-size: 1.2em; color: #475569; margin: 0;">PHP Framework</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20;">Laravel Usage Statistics (2024)</h3>
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <!-- Bar Chart -->
+                <div style="margin-bottom: 20px;">
+                    <div style="margin-bottom: 25px;">
+                        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <span style="width: 150px; font-weight: bold; color: #334155;">Laravel</span>
+                            <div style="flex: 1; background: #f1f5f9; border-radius: 8px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="background: linear-gradient(90deg, #FF2D20, #F9322C); height: 100%; width: 78%; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; color: white; font-weight: bold; border-radius: 8px;">78%</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <span style="width: 150px; font-weight: bold; color: #334155;">Symfony</span>
+                            <div style="flex: 1; background: #f1f5f9; border-radius: 8px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="background: #475569; height: 100%; width: 54%; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; color: white; font-weight: bold; border-radius: 8px;">54%</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <span style="width: 150px; font-weight: bold; color: #334155;">CodeIgniter</span>
+                            <div style="flex: 1; background: #f1f5f9; border-radius: 8px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="background: #475569; height: 100%; width: 32%; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; color: white; font-weight: bold; border-radius: 8px;">32%</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <span style="width: 150px; font-weight: bold; color: #334155;">Yii</span>
+                            <div style="flex: 1; background: #f1f5f9; border-radius: 8px; height: 40px; position: relative; overflow: hidden;">
+                                <div style="background: #475569; height: 100%; width: 18%; display: flex; align-items: center; justify-content: flex-end; padding-right: 15px; color: white; font-weight: bold; border-radius: 8px;">18%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; font-size: 1.1em; color: #64748b; margin-top: 20px;">
+                        <em>PHP Framework Popularity (Based on Stack Overflow Developer Survey & GitHub Activity)</em>
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 25px; background: #FEF2F2; border-radius: 10px; border: 2px solid #FF2D20;">
+                <p style="text-align: center; font-size: 1.3em; color: #991B1B; margin: 0;">
+                    <strong>💡 Key Insight:</strong> Laravel powers over <strong>2 million live websites</strong> and continues to grow at 25% year-over-year
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Real-World Applications Built with Laravel -->
+        <div class="slide">
+            <h2>Real-World Applications Built with Laravel</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                Laravel powers some of the most popular and innovative applications used by millions worldwide
+            </p>
+
+            <div class="feature-grid" style="margin-bottom: 40px;">
+                <!-- Laravel.com -->
+                <div class="feature-card" style="border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; font-size: 1.6em;">🌐 Laravel.com</h4>
+                    <p style="font-size: 1.15em; margin-bottom: 15px;">
+                        <strong>Official Laravel Website</strong><br>
+                        The main Laravel website itself is built with Laravel, showcasing the framework's capabilities.
+                    </p>
+                    <p style="font-size: 1em; color: #64748b; margin-bottom: 10px;">
+                        <strong>Features:</strong> Documentation, News, Ecosystem showcase
+                    </p>
+                    <a href="https://github.com/laravel/laravel.com-next" target="_blank"
+                       style="display: inline-block; padding: 10px 20px; background: #FF2D20; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px;">
+                        📂 View on GitHub
+                    </a>
+                </div>
+
+                <!-- Invoice Ninja -->
+                <div class="feature-card" style="border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; font-size: 1.6em;">💼 Invoice Ninja</h4>
+                    <p style="font-size: 1.15em; margin-bottom: 15px;">
+                        <strong>Invoicing & Expense Platform</strong><br>
+                        Open-source invoicing solution used by 100,000+ businesses worldwide.
+                    </p>
+                    <p style="font-size: 1em; color: #64748b; margin-bottom: 10px;">
+                        <strong>Features:</strong> Invoicing, Payments, Time-tracking, Expense management
+                    </p>
+                    <a href="https://github.com/invoiceninja/invoiceninja" target="_blank"
+                       style="display: inline-block; padding: 10px 20px; background: #FF2D20; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px;">
+                        📂 View on GitHub
+                    </a>
+                </div>
+
+                <!-- Monica -->
+                <div class="feature-card" style="border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; font-size: 1.6em;">👥 Monica CRM</h4>
+                    <p style="font-size: 1.15em; margin-bottom: 15px;">
+                        <strong>Personal CRM</strong><br>
+                        Personal relationship management tool with 10,000+ stars on GitHub.
+                    </p>
+                    <p style="font-size: 1em; color: #64748b; margin-bottom: 10px;">
+                        <strong>Features:</strong> Contact management, Activity tracking, Reminders, Notes
+                    </p>
+                    <a href="https://github.com/monicahq/monica" target="_blank"
+                       style="display: inline-block; padding: 10px 20px; background: #FF2D20; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px;">
+                        📂 View on GitHub
+                    </a>
+                </div>
+
+                <!-- Koel -->
+                <div class="feature-card" style="border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; font-size: 1.6em;">🎵 Koel</h4>
+                    <p style="font-size: 1.15em; margin-bottom: 15px;">
+                        <strong>Personal Music Streaming Service</strong><br>
+                        Simple web-based personal audio streaming service with 15,000+ stars.
+                    </p>
+                    <p style="font-size: 1em; color: #64748b; margin-bottom: 10px;">
+                        <strong>Features:</strong> Audio streaming, Playlist management, Mobile support
+                    </p>
+                    <a href="https://github.com/koel/koel" target="_blank"
+                       style="display: inline-block; padding: 10px 20px; background: #FF2D20; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px;">
+                        📂 View on GitHub
+                    </a>
+                </div>
+
+                <!-- Firefly III -->
+                <div class="feature-card" style="border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; font-size: 1.6em;">💰 Firefly III</h4>
+                    <p style="font-size: 1.15em; margin-bottom: 15px;">
+                        <strong>Personal Finance Manager</strong><br>
+                        Free and open-source personal finance manager with 14,000+ stars.
+                    </p>
+                    <p style="font-size: 1em; color: #64748b; margin-bottom: 10px;">
+                        <strong>Features:</strong> Budget tracking, Bill management, Reports, Multi-currency
+                    </p>
+                    <a href="https://github.com/firefly-iii/firefly-iii" target="_blank"
+                       style="display: inline-block; padding: 10px 20px; background: #FF2D20; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px;">
+                        📂 View on GitHub
+                    </a>
+                </div>
+
+                <!-- Bagisto -->
+                <div class="feature-card" style="border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; font-size: 1.6em;">🛒 Bagisto</h4>
+                    <p style="font-size: 1.15em; margin-bottom: 15px;">
+                        <strong>E-commerce Platform</strong><br>
+                        Open-source e-commerce framework built on Laravel with 10,000+ stars.
+                    </p>
+                    <p style="font-size: 1em; color: #64748b; margin-bottom: 10px;">
+                        <strong>Features:</strong> Multi-channel, Multi-currency, Multi-warehouse, PWA ready
+                    </p>
+                    <a href="https://github.com/bagisto/bagisto" target="_blank"
+                       style="display: inline-block; padding: 10px 20px; background: #FF2D20; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 10px;">
+                        📂 View on GitHub
+                    </a>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-top: 50px;">Enterprise Companies Using Laravel</h3>
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; margin-top: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+                    <div>
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🚗</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 5px;">Toyota</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Hall of Fame Platform</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🎬</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 5px;">Disney</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Internal Applications</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">💳</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 5px;">Mastercard</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Payment Solutions</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🏛️</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 5px;">BBC</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Content Management</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">📺</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 5px;">Twitch</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Backend Services</p>
+                    </div>
+                    <div>
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🎧</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 5px;">Warner Bros</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Digital Platforms</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 30px; background: #ffffff; border-radius: 10px; border: 2px solid #FF2D20; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 1.4em; color: #334155; margin: 0;">
+                    <strong style="color: #FF2D20;">🚀 From Startups to Fortune 500:</strong> Laravel scales from small projects to enterprise applications handling millions of users daily
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Laravel vs Other Frameworks -->
+        <div class="slide">
+            <h2>Laravel vs Other Web Frameworks</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                How Laravel compares to popular frameworks across different programming languages
+            </p>
+
+            <!-- Comparison Table -->
+            <div style="overflow-x: auto; margin-bottom: 40px;">
+                <table style="width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                    <thead>
+                        <tr style="background: linear-gradient(135deg, #FF2D20 0%, #F9322C 100%); color: white;">
+                            <th style="padding: 20px; text-align: left; font-size: 1.2em;">Framework</th>
+                            <th style="padding: 20px; text-align: left; font-size: 1.2em;">Language</th>
+                            <th style="padding: 20px; text-align: left; font-size: 1.2em;">Learning Curve</th>
+                            <th style="padding: 20px; text-align: left; font-size: 1.2em;">Performance</th>
+                            <th style="padding: 20px; text-align: left; font-size: 1.2em;">Community</th>
+                            <th style="padding: 20px; text-align: left; font-size: 1.2em;">Use Case</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #FEF2F2; border-left: 4px solid #FF2D20;">
+                            <td style="padding: 18px; font-weight: bold; color: #FF2D20; font-size: 1.15em;">
+                                🔴 Laravel
+                            </td>
+                            <td style="padding: 18px; font-size: 1.1em;">PHP</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⭐⭐⭐⭐ Easy</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⚡⚡⚡⚡ Fast</td>
+                            <td style="padding: 18px; font-size: 1.1em;">👥👥👥👥👥 Huge</td>
+                            <td style="padding: 18px; font-size: 1.1em;">Full-stack Web Apps</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 18px; font-weight: bold; color: #0C4B33; font-size: 1.15em;">
+                                🟢 Django
+                            </td>
+                            <td style="padding: 18px; font-size: 1.1em;">Python</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⭐⭐⭐ Moderate</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⚡⚡⚡⚡ Fast</td>
+                            <td style="padding: 18px; font-size: 1.1em;">👥👥👥👥 Large</td>
+                            <td style="padding: 18px; font-size: 1.1em;">Data-driven Apps</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 18px; font-weight: bold; color: #E34F26; font-size: 1.15em;">
+                                🟠 Express.js
+                            </td>
+                            <td style="padding: 18px; font-size: 1.1em;">Node.js</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⭐⭐⭐⭐ Easy</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⚡⚡⚡⚡⚡ Very Fast</td>
+                            <td style="padding: 18px; font-size: 1.1em;">👥👥👥👥👥 Huge</td>
+                            <td style="padding: 18px; font-size: 1.1em;">APIs & Real-time</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 18px; font-weight: bold; color: #7952B3; font-size: 1.15em;">
+                                🟣 ASP.NET Core
+                            </td>
+                            <td style="padding: 18px; font-size: 1.1em;">C#</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⭐⭐ Hard</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⚡⚡⚡⚡⚡ Very Fast</td>
+                            <td style="padding: 18px; font-size: 1.1em;">👥👥👥👥 Large</td>
+                            <td style="padding: 18px; font-size: 1.1em;">Enterprise Apps</td>
+                        </tr>
+                        <tr style="background: white;">
+                            <td style="padding: 18px; font-weight: bold; color: #000000; font-size: 1.15em;">
+                                ⚫ Ruby on Rails
+                            </td>
+                            <td style="padding: 18px; font-size: 1.1em;">Ruby</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⭐⭐⭐ Moderate</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⚡⚡⚡ Good</td>
+                            <td style="padding: 18px; font-size: 1.1em;">👥👥👥👥 Large</td>
+                            <td style="padding: 18px; font-size: 1.1em;">Rapid Prototyping</td>
+                        </tr>
+                        <tr style="background: #f8fafc;">
+                            <td style="padding: 18px; font-weight: bold; color: #00ADD8; font-size: 1.15em;">
+                                🔵 Spring Boot
+                            </td>
+                            <td style="padding: 18px; font-size: 1.1em;">Java</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⭐⭐ Hard</td>
+                            <td style="padding: 18px; font-size: 1.1em;">⚡⚡⚡⚡ Fast</td>
+                            <td style="padding: 18px; font-size: 1.1em;">👥👥👥👥👥 Huge</td>
+                            <td style="padding: 18px; font-size: 1.1em;">Enterprise Systems</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-top: 50px; margin-bottom: 30px;">Detailed Comparison</h3>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                <!-- Development Speed -->
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">⚡ Development Speed</h4>
+                    <ul style="margin-left: 20px; font-size: 1.1em; line-height: 1.8;">
+                        <li><strong style="color: #FF2D20;">Laravel:</strong> Fastest (Eloquent ORM, Blade, Artisan)</li>
+                        <li><strong>Rails:</strong> Very Fast (Convention over Config)</li>
+                        <li><strong>Django:</strong> Fast (Built-in Admin, ORM)</li>
+                        <li><strong>Spring Boot:</strong> Moderate (Verbose)</li>
+                    </ul>
+                </div>
+
+                <!-- Ecosystem & Packages -->
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">📦 Ecosystem & Packages</h4>
+                    <ul style="margin-left: 20px; font-size: 1.1em; line-height: 1.8;">
+                        <li><strong style="color: #FF2D20;">Laravel:</strong> 15,000+ Packages (Packagist)</li>
+                        <li><strong>Express.js:</strong> 1M+ (npm)</li>
+                        <li><strong>Spring Boot:</strong> Extensive (Maven Central)</li>
+                        <li><strong>Django:</strong> 4,000+ (PyPI)</li>
+                    </ul>
+                </div>
+
+                <!-- Built-in Features -->
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">🛠️ Built-in Features</h4>
+                    <ul style="margin-left: 20px; font-size: 1.1em; line-height: 1.8;">
+                        <li><strong style="color: #FF2D20;">Laravel:</strong> Authentication, Queue, Mail, Storage</li>
+                        <li><strong>Django:</strong> Admin Panel, ORM, Forms</li>
+                        <li><strong>Rails:</strong> Active Record, Action Cable</li>
+                        <li><strong>Express.js:</strong> Minimal (DIY approach)</li>
+                    </ul>
+                </div>
+
+                <!-- Job Market -->
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">💼 Job Market (2024)</h4>
+                    <ul style="margin-left: 20px; font-size: 1.1em; line-height: 1.8;">
+                        <li><strong style="color: #FF2D20;">Laravel:</strong> 50K+ jobs globally</li>
+                        <li><strong>Spring Boot:</strong> 80K+ jobs (Enterprise)</li>
+                        <li><strong>Django:</strong> 45K+ jobs (AI/ML focus)</li>
+                        <li><strong>Express.js:</strong> 70K+ jobs (Startups)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">Why Choose Laravel?</h3>
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">🎯</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Perfect Balance</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Easy to learn, powerful enough for enterprise</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">🚀</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Rapid Development</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Ship features 50% faster than competitors</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">💎</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Elegant Syntax</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Clean, expressive, and maintainable code</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 10px;">🌍</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Best PHP Framework</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Industry leader with proven track record</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 30px; background: #ffffff; border-radius: 10px; border: 2px solid #FF2D20; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <p style="text-align: center; font-size: 1.4em; color: #334155; margin: 0;">
+                    <strong style="color: #FF2D20;">📊 Bottom Line:</strong> Laravel offers the best developer experience in PHP while competing with frameworks from any language
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 5: How to Install Laravel -->
+        <div class="slide">
+            <h2>How to Install Laravel</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                Get started with Laravel in minutes - follow these simple steps
+            </p>
+
+            <h3 style="color: #FF2D20;">📋 Prerequisites</h3>
+            <div style="background: #f8fafc; padding: 30px; border-radius: 12px; border-left: 4px solid #FF2D20; margin-bottom: 40px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
+                    <div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">🐘 PHP 8.1+</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Laravel requires PHP 8.1 or higher</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">🎼 Composer</h4>
+                        <p style="font-size: 1.1em; color: #475569;">PHP dependency manager</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">🗄️ Database</h4>
+                        <p style="font-size: 1.1em; color: #475569;">MySQL, PostgreSQL, SQLite, or SQL Server</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">📦 Node.js (Optional)</h4>
+                        <p style="font-size: 1.1em; color: #475569;">For frontend asset compilation</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20;">🚀 Installation Methods</h3>
+
+            <!-- Method 1: Laravel Installer -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #FF2D20;">
+                <h4 style="color: #FF2D20; font-size: 1.5em; margin-bottom: 20px;">Method 1: Laravel Installer (Recommended)</h4>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Step 1:</strong> Install Laravel Installer globally</p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        composer global require laravel/installer
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Step 2:</strong> Create a new Laravel project</p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        laravel new my-project
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Step 3:</strong> Navigate to your project and start the server</p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        cd my-project<br>
+                        php artisan serve
+                    </div>
+                </div>
+
+                <div style="padding: 20px; background: #D1FAE5; border-radius: 8px; border-left: 4px solid #10B981;">
+                    <p style="font-size: 1.1em; color: #065F46; margin: 0;">
+                        ✅ <strong>Your Laravel app is now running at:</strong> http://localhost:8000
+                    </p>
+                </div>
+            </div>
+
+            <!-- Method 2: Composer Create-Project -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #F9322C;">
+                <h4 style="color: #F9322C; font-size: 1.5em; margin-bottom: 20px;">Method 2: Composer Create-Project</h4>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Create project directly with Composer:</strong></p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        composer create-project laravel/laravel my-project
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Navigate and start server:</strong></p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        cd my-project<br>
+                        php artisan serve
+                    </div>
+                </div>
+            </div>
+
+            <!-- Method 3: Docker (Laravel Sail) -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #FF2D20;">
+                <h4 style="color: #FF2D20; font-size: 1.5em; margin-bottom: 20px;">Method 3: Docker with Laravel Sail</h4>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Create project with Sail (includes Docker configuration):</strong></p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        curl -s https://laravel.build/my-project | bash
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <p style="font-size: 1.2em; color: #334155; margin-bottom: 15px;"><strong>Start Docker containers:</strong></p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        cd my-project<br>
+                        ./vendor/bin/sail up
+                    </div>
+                </div>
+
+                <div style="padding: 20px; background: #DBEAFE; border-radius: 8px; border-left: 4px solid #3B82F6;">
+                    <p style="font-size: 1.1em; color: #1E40AF; margin: 0;">
+                        💡 <strong>Sail includes:</strong> PHP, MySQL, Redis, Mailhog, and more - all pre-configured!
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-top: 40px; margin-bottom: 30px;">⚙️ Post-Installation Setup</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">1️⃣ Configure Environment</h4>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 1em;">
+                        cp .env.example .env<br>
+                        php artisan key:generate
+                    </div>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">2️⃣ Setup Database</h4>
+                    <p style="font-size: 1.1em; color: #475569; margin-bottom: 10px;">Edit <code>.env</code> file:</p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 1em;">
+                        DB_CONNECTION=mysql<br>
+                        DB_DATABASE=my_database<br>
+                        DB_USERNAME=root<br>
+                        DB_PASSWORD=
+                    </div>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">3️⃣ Run Migrations</h4>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 1em;">
+                        php artisan migrate
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20;">
+                <h3 style="color: #FF2D20; text-align: center; margin-bottom: 25px;">🎉 Congratulations!</h3>
+                <p style="text-align: center; font-size: 1.3em; color: #334155; margin-bottom: 20px;">
+                    You've successfully installed Laravel! Now you're ready to build amazing web applications.
+                </p>
+                <div style="text-align: center;">
+                    <div style="display: inline-block; background: #ffffff; padding: 20px 40px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <p style="font-size: 1.2em; color: #64748b; margin-bottom: 10px;">Visit your application at:</p>
+                        <p style="font-size: 1.5em; font-weight: bold; color: #FF2D20; margin: 0;">http://localhost:8000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; padding: 25px; background: #FEF9C3; border-radius: 10px; border-left: 4px solid #EAB308;">
+                <p style="font-size: 1.2em; color: #854D0E; margin: 0;">
+                    <strong>💡 Pro Tip:</strong> Use <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">php artisan</code> command to explore all available Laravel commands and features!
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 6: Installing Laravel with Herd -->
+        <div class="slide">
+            <h2>Installing Laravel with Herd</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                The fastest way to get started with Laravel - zero configuration required!
+            </p>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20; margin-bottom: 40px;">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 5em; margin-bottom: 20px;">🐘</div>
+                    <h3 style="color: #FF2D20; font-size: 2em; margin-bottom: 15px;">What is Laravel Herd?</h3>
+                    <p style="font-size: 1.3em; color: #334155; line-height: 1.8;">
+                        <strong>Herd</strong> is a blazingly fast, native Laravel and PHP development environment for macOS and Windows.
+                        Created by the Laravel team, it includes everything you need to start developing with Laravel in seconds.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px;">
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">⚡</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Lightning Fast</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Native performance, no Docker overhead</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🎯</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Zero Config</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Works out of the box, no setup needed</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">📦</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Everything Included</h4>
+                        <p style="font-size: 1.1em; color: #475569;">PHP, Composer, Node.js, npm pre-installed</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; margin-bottom: 30px;">🚀 Installation Steps</h3>
+
+            <!-- Step 1: Download -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #FF2D20;">
+                <h4 style="color: #FF2D20; font-size: 1.5em; margin-bottom: 20px;">Step 1: Download Herd</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Visit the official Herd website and download the installer for your operating system:
+                </p>
+
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; flex: 1; min-width: 250px; text-align: center; border: 2px solid #e2e8f0;">
+                        <div style="font-size: 3em; margin-bottom: 15px;">🍎</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px; font-size: 1.3em;">macOS</h4>
+                        <p style="font-size: 1.1em; color: #475569; margin-bottom: 15px;">macOS 12 Monterey or later</p>
+                        <a href="https://herd.laravel.com" target="_blank"
+                           style="display: inline-block; padding: 12px 30px; background: #FF2D20; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em;">
+                            Download for Mac
+                        </a>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; flex: 1; min-width: 250px; text-align: center; border: 2px solid #e2e8f0;">
+                        <div style="font-size: 3em; margin-bottom: 15px;">🪟</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px; font-size: 1.3em;">Windows</h4>
+                        <p style="font-size: 1.1em; color: #475569; margin-bottom: 15px;">Windows 10 or later</p>
+                        <a href="https://herd.laravel.com" target="_blank"
+                           style="display: inline-block; padding: 12px 30px; background: #FF2D20; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em;">
+                            Download for Windows
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 25px; padding: 20px; background: #DBEAFE; border-radius: 8px; border-left: 4px solid #3B82F6;">
+                    <p style="font-size: 1.1em; color: #1E40AF; margin: 0;">
+                        🌐 <strong>Official Website:</strong> <a href="https://herd.laravel.com" target="_blank" style="color: #FF2D20; font-weight: bold;">https://herd.laravel.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2: Install -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #F9322C;">
+                <h4 style="color: #F9322C; font-size: 1.5em; margin-bottom: 20px;">Step 2: Run the Installer</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Double-click the downloaded file and follow the installation wizard:
+                </p>
+
+                <ul style="font-size: 1.2em; color: #334155; line-height: 2; margin-left: 40px;">
+                    <li>Accept the license agreement</li>
+                    <li>Choose installation directory (default recommended)</li>
+                    <li>Wait for the installation to complete (usually under 2 minutes)</li>
+                    <li>Herd will automatically start when installation finishes</li>
+                </ul>
+
+                <div style="margin-top: 25px; padding: 20px; background: #D1FAE5; border-radius: 8px; border-left: 4px solid #10B981;">
+                    <p style="font-size: 1.1em; color: #065F46; margin: 0;">
+                        ✅ <strong>No Configuration Required:</strong> Herd automatically configures PHP, Composer, and development server for you!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3: Create Project -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #FF2D20;">
+                <h4 style="color: #FF2D20; font-size: 1.5em; margin-bottom: 20px;">Step 3: Create Your First Laravel Project</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Open your terminal and create a new Laravel project:
+                </p>
+
+                <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.2em; margin-bottom: 20px;">
+                    cd ~/Herd<br>
+                    composer create-project laravel/laravel my-project
+                </div>
+
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Or use Laravel's new installer:
+                </p>
+
+                <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.2em; margin-bottom: 20px;">
+                    cd ~/Herd<br>
+                    laravel new my-project
+                </div>
+
+                <div style="margin-top: 25px; padding: 20px; background: #FEF9C3; border-radius: 8px; border-left: 4px solid #EAB308;">
+                    <p style="font-size: 1.1em; color: #854D0E; margin: 0;">
+                        💡 <strong>Herd Directory:</strong> Projects in <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">~/Herd</code> are automatically available at <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">http://my-project.test</code>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4: Access Your App -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #F9322C;">
+                <h4 style="color: #F9322C; font-size: 1.5em; margin-bottom: 20px;">Step 4: Access Your Application</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Your Laravel application is automatically served! Just open your browser and visit:
+                </p>
+
+                <div style="text-align: center; background: #f8fafc; padding: 30px; border-radius: 10px; border: 2px solid #FF2D20;">
+                    <p style="font-size: 1.3em; color: #64748b; margin-bottom: 15px;">Your app is ready at:</p>
+                    <p style="font-size: 2em; font-weight: bold; color: #FF2D20; margin: 0;">http://my-project.test</p>
+                </div>
+
+                <div style="margin-top: 25px; padding: 20px; background: #D1FAE5; border-radius: 8px; border-left: 4px solid #10B981;">
+                    <p style="font-size: 1.1em; color: #065F46; margin: 0;">
+                        ✨ <strong>SSL Included:</strong> Herd automatically provides SSL certificates, so you can also access your app via <strong>https://my-project.test</strong>
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">🎛️ Herd Features</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🔄 Multiple PHP Versions</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Switch between PHP versions instantly with one click</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🗄️ Database Management</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Built-in support for MySQL and PostgreSQL</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">📧 Mail Testing</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Integrated mail testing with MailHog</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🔐 SSL Certificates</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Automatic HTTPS for all your local sites</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">⚙️ GUI Interface</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Easy-to-use menu bar app for all settings</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🚀 Optimized Performance</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Native speed, faster than Docker alternatives</p>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20;">
+                <h3 style="color: #FF2D20; text-align: center; margin-bottom: 25px;">🎉 Why Choose Herd?</h3>
+                <div style="text-align: center;">
+                    <p style="font-size: 1.3em; color: #334155; line-height: 1.8; margin-bottom: 25px;">
+                        Herd is the <strong style="color: #FF2D20;">official recommendation</strong> from the Laravel team for local development.
+                        It's the fastest, easiest, and most reliable way to run Laravel on your machine.
+                    </p>
+                    <div style="background: white; padding: 25px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                        <p style="font-size: 1.2em; color: #64748b; margin-bottom: 10px;">Get started in under</p>
+                        <p style="font-size: 3em; font-weight: bold; color: #FF2D20; margin: 0;">2 Minutes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Laravel with GitHub Codespaces -->
+        <div class="slide">
+            <h2>Laravel with GitHub Codespaces</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                Develop Laravel applications in the cloud - no local setup required!
+            </p>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20; margin-bottom: 40px;">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="font-size: 5em; margin-bottom: 20px;">☁️</div>
+                    <h3 style="color: #FF2D20; font-size: 2em; margin-bottom: 15px;">What are GitHub Codespaces?</h3>
+                    <p style="font-size: 1.3em; color: #334155; line-height: 1.8;">
+                        <strong>GitHub Codespaces</strong> provides a complete, configurable development environment in the cloud.
+                        Code, build, test, and deploy Laravel applications directly from your browser with VS Code.
+                    </p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px;">
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🌐</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Code Anywhere</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Develop from any device with a browser</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">⚡</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Instant Setup</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Environment ready in under 60 seconds</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">💪</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Powerful Hardware</h4>
+                        <p style="font-size: 1.1em; color: #475569;">Up to 32 cores, 64GB RAM available</p>
+                    </div>
+                    <div style="background: white; padding: 25px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🔄</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 10px;">Pre-configured</h4>
+                        <p style="font-size: 1.1em; color: #475569;">PHP, Composer, databases included</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; margin-bottom: 30px;">🚀 Getting Started with Codespaces</h3>
+
+            <!-- Step 1: Create Repository -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #FF2D20;">
+                <h4 style="color: #FF2D20; font-size: 1.5em; margin-bottom: 20px;">Step 1: Create or Open a Repository</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    You have two options to get started:
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; margin-bottom: 25px;">
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border: 2px solid #e2e8f0;">
+                        <h5 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">Option A: Use Existing Repo</h5>
+                        <p style="font-size: 1.1em; color: #475569; margin-bottom: 15px;">
+                            Navigate to any Laravel repository on GitHub and click the <strong style="color: #FF2D20;">"Code"</strong> button, then select <strong style="color: #FF2D20;">"Create codespace on main"</strong>
+                        </p>
+                    </div>
+
+                    <div style="background: #f8fafc; padding: 25px; border-radius: 10px; border: 2px solid #e2e8f0;">
+                        <h5 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">Option B: Start Fresh</h5>
+                        <p style="font-size: 1.1em; color: #475569; margin-bottom: 15px;">
+                            Create a new repository and initialize it with a Laravel template or start from scratch
+                        </p>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 25px; border-radius: 10px; border: 2px solid #FF2D20; text-align: center;">
+                    <h5 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">🚀 Try it Now - Codespace-Ready Laravel Repository</h5>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 20px;">
+                        Use this pre-configured Laravel repository with Codespaces support built-in
+                    </p>
+                    <a href="https://github.com/laravel/laravel" target="_blank"
+                       style="display: inline-block; padding: 15px 40px; background: #FF2D20; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2em; margin-bottom: 15px; box-shadow: 0 4px 12px rgba(255, 45, 32, 0.3);">
+                        📦 Open Laravel/Laravel Repository
+                    </a>
+                    <p style="font-size: 1em; color: #64748b; margin: 0;">
+                        Click "Code" → "Codespaces" → "Create codespace on main"
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2: Configure Codespace -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #F9322C;">
+                <h4 style="color: #F9322C; font-size: 1.5em; margin-bottom: 20px;">Step 2: Create Devcontainer Configuration</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Create a <code style="background: #f8fafc; padding: 4px 8px; border-radius: 4px;">.devcontainer/devcontainer.json</code> file:
+                </p>
+
+                <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1em; overflow-x: auto;">
+{<br>
+&nbsp;&nbsp;"name": "Laravel",<br>
+&nbsp;&nbsp;"image": "mcr.microsoft.com/devcontainers/php:8.2",<br>
+&nbsp;&nbsp;"features": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"ghcr.io/devcontainers/features/node:1": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"version": "lts"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;"postCreateCommand": "composer install && npm install",<br>
+&nbsp;&nbsp;"forwardPorts": [8000],<br>
+&nbsp;&nbsp;"customizations": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"vscode": {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"extensions": [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"bmewburn.vscode-intelephense-client",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amiralizadeh9480.laravel-extra-intellisense"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}<br>
+}
+                </div>
+
+                <div style="margin-top: 25px; padding: 20px; background: #DBEAFE; border-radius: 8px; border-left: 4px solid #3B82F6;">
+                    <p style="font-size: 1.1em; color: #1E40AF; margin: 0;">
+                        💡 <strong>Pro Tip:</strong> This configuration automatically installs PHP 8.2, Node.js, Composer, and useful VS Code extensions!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3: Install Laravel -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #FF2D20;">
+                <h4 style="color: #FF2D20; font-size: 1.5em; margin-bottom: 20px;">Step 3: Create Laravel Project</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Once your Codespace opens, use the integrated terminal to create a new Laravel project:
+                </p>
+
+                <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.2em; margin-bottom: 20px;">
+                    composer create-project laravel/laravel .<br>
+                    php artisan key:generate<br>
+                    php artisan serve
+                </div>
+
+                <div style="padding: 20px; background: #D1FAE5; border-radius: 8px; border-left: 4px solid #10B981;">
+                    <p style="font-size: 1.1em; color: #065F46; margin: 0;">
+                        ✅ <strong>Automatic Port Forwarding:</strong> GitHub Codespaces automatically forwards port 8000, making your app accessible via a secure URL!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4: Access Application -->
+            <div style="background: #ffffff; padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 5px solid #F9322C;">
+                <h4 style="color: #F9322C; font-size: 1.5em; margin-bottom: 20px;">Step 4: Access Your Application</h4>
+                <p style="font-size: 1.2em; color: #334155; margin-bottom: 20px;">
+                    Click on the "Ports" tab in VS Code and open the forwarded port 8000. You'll get a secure URL like:
+                </p>
+
+                <div style="text-align: center; background: #f8fafc; padding: 30px; border-radius: 10px; border: 2px solid #FF2D20;">
+                    <p style="font-size: 1.3em; color: #64748b; margin-bottom: 15px;">Your app is accessible at:</p>
+                    <p style="font-size: 1.5em; font-weight: bold; color: #FF2D20; margin: 0; word-break: break-all;">https://username-repo-abc123.github.dev</p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">✨ Codespaces Features for Laravel</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 40px;">
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🗄️ Database Support</h4>
+                    <p style="font-size: 1.1em; color: #475569;">MySQL, PostgreSQL, SQLite available out of the box</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🔧 Full VS Code</h4>
+                    <p style="font-size: 1.1em; color: #475569;">All your favorite extensions and settings</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">👥 Team Collaboration</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Share your Codespace with team members instantly</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🔐 Secure by Default</h4>
+                    <p style="font-size: 1.1em; color: #475569;">HTTPS, secrets management, and access control</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">💾 Auto-save State</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Your work is automatically saved and persisted</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">⚙️ Git Integration</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Seamless commit, push, and pull requests</p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">💰 Pricing & Free Tier</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; margin-bottom: 40px;">
+                <div style="background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #10B981;">
+                    <h4 style="color: #10B981; margin-bottom: 20px; font-size: 1.5em; text-align: center;">🎁 Free Tier</h4>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div style="font-size: 2.5em; font-weight: bold; color: #10B981;">120</div>
+                        <p style="font-size: 1.2em; color: #475569;">Core-hours per month</p>
+                    </div>
+                    <ul style="font-size: 1.1em; color: #334155; line-height: 2; margin-left: 20px;">
+                        <li>2-core machine: 60 hours/month</li>
+                        <li>4-core machine: 30 hours/month</li>
+                        <li>15GB storage included</li>
+                        <li>Perfect for learning Laravel</li>
+                    </ul>
+                </div>
+
+                <div style="background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 20px; font-size: 1.5em; text-align: center;">💼 Pro Plan ($4/mo)</h4>
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <div style="font-size: 2.5em; font-weight: bold; color: #FF2D20;">180</div>
+                        <p style="font-size: 1.2em; color: #475569;">Core-hours per month</p>
+                    </div>
+                    <ul style="font-size: 1.1em; color: #334155; line-height: 2; margin-left: 20px;">
+                        <li>More powerful machines available</li>
+                        <li>Up to 32 cores, 64GB RAM</li>
+                        <li>20GB storage per Codespace</li>
+                        <li>Ideal for production development</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20;">
+                <h3 style="color: #FF2D20; text-align: center; margin-bottom: 25px;">🎯 When to Use Codespaces?</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                    <div style="background: white; padding: 20px; border-radius: 8px;">
+                        <div style="font-size: 2em; margin-bottom: 10px; text-align: center;">💻</div>
+                        <h5 style="color: #FF2D20; margin-bottom: 10px; text-align: center;">No Local Setup</h5>
+                        <p style="font-size: 1em; color: #475569; text-align: center;">When you don't want to install anything locally</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px;">
+                        <div style="font-size: 2em; margin-bottom: 10px; text-align: center;">🌍</div>
+                        <h5 style="color: #FF2D20; margin-bottom: 10px; text-align: center;">Work Anywhere</h5>
+                        <p style="font-size: 1em; color: #475569; text-align: center;">Code from different computers seamlessly</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px;">
+                        <div style="font-size: 2em; margin-bottom: 10px; text-align: center;">👥</div>
+                        <h5 style="color: #FF2D20; margin-bottom: 10px; text-align: center;">Team Projects</h5>
+                        <p style="font-size: 1em; color: #475569; text-align: center;">Standardized environment for all team members</p>
+                    </div>
+                    <div style="background: white; padding: 20px; border-radius: 8px;">
+                        <div style="font-size: 2em; margin-bottom: 10px; text-align: center;">🚀</div>
+                        <h5 style="color: #FF2D20; margin-bottom: 10px; text-align: center;">Quick Testing</h5>
+                        <p style="font-size: 1em; color: #475569; text-align: center;">Test PRs and branches without local setup</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; padding: 25px; background: #FEF9C3; border-radius: 10px; border-left: 4px solid #EAB308;">
+                <p style="font-size: 1.2em; color: #854D0E; margin: 0;">
+                    <strong>💡 Pro Tip:</strong> Use GitHub Codespaces for learning, testing, and collaboration. For daily development, Herd or local setup offers better performance!
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 8: Laravel Project Structure -->
+        <div class="slide">
+            <h2>Laravel Project Structure</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                Understanding the organization of a Laravel application
+            </p>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 30px; border-radius: 12px; border: 2px solid #FF2D20; margin-bottom: 40px; text-align: center;">
+                <div style="font-size: 4em; margin-bottom: 15px;">📁</div>
+                <p style="font-size: 1.3em; color: #334155; line-height: 1.8;">
+                    Laravel follows a <strong style="color: #FF2D20;">well-organized directory structure</strong> that separates concerns and makes your code maintainable and scalable.
+                </p>
+            </div>
+
+            <h3 style="color: #FF2D20; margin-bottom: 30px;">🗂️ Root Directory Structure</h3>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; margin-bottom: 40px;">
+                <!-- App Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #FF2D20;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">📂</span>
+                        <h4 style="color: #FF2D20; font-size: 1.4em; margin: 0;">app/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Core application code</strong> - Contains your Models, Controllers, Middleware, and more
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        app/<br>
+                        ├── Http/Controllers/<br>
+                        ├── Models/<br>
+                        ├── Providers/<br>
+                        └── Console/
+                    </div>
+                </div>
+
+                <!-- Bootstrap Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #F9322C;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">📂</span>
+                        <h4 style="color: #F9322C; font-size: 1.4em; margin: 0;">bootstrap/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Application bootstrapping</strong> - Framework initialization and app.php
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        bootstrap/<br>
+                        ├── app.php<br>
+                        └── cache/
+                    </div>
+                </div>
+
+                <!-- Config Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #FF2D20;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">⚙️</span>
+                        <h4 style="color: #FF2D20; font-size: 1.4em; margin: 0;">config/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Configuration files</strong> - Database, mail, cache, session settings
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        config/<br>
+                        ├── app.php<br>
+                        ├── database.php<br>
+                        ├── mail.php<br>
+                        └── ...
+                    </div>
+                </div>
+
+                <!-- Database Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #F9322C;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">🗄️</span>
+                        <h4 style="color: #F9322C; font-size: 1.4em; margin: 0;">database/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Database files</strong> - Migrations, seeders, and factories
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        database/<br>
+                        ├── migrations/<br>
+                        ├── seeders/<br>
+                        └── factories/
+                    </div>
+                </div>
+
+                <!-- Public Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #FF2D20;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">🌐</span>
+                        <h4 style="color: #FF2D20; font-size: 1.4em; margin: 0;">public/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Web root directory</strong> - Entry point (index.php), assets (CSS, JS, images)
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        public/<br>
+                        ├── index.php<br>
+                        ├── css/<br>
+                        ├── js/<br>
+                        └── images/
+                    </div>
+                </div>
+
+                <!-- Resources Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #F9322C;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">🎨</span>
+                        <h4 style="color: #F9322C; font-size: 1.4em; margin: 0;">resources/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Views and assets</strong> - Blade templates, uncompiled CSS, JS
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        resources/<br>
+                        ├── views/<br>
+                        ├── css/<br>
+                        └── js/
+                    </div>
+                </div>
+
+                <!-- Routes Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #FF2D20;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">🛣️</span>
+                        <h4 style="color: #FF2D20; font-size: 1.4em; margin: 0;">routes/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Route definitions</strong> - Web routes, API routes, console commands
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        routes/<br>
+                        ├── web.php<br>
+                        ├── api.php<br>
+                        └── console.php
+                    </div>
+                </div>
+
+                <!-- Storage Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #F9322C;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">💾</span>
+                        <h4 style="color: #F9322C; font-size: 1.4em; margin: 0;">storage/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Generated files</strong> - Logs, cache, uploaded files, session data
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        storage/<br>
+                        ├── app/<br>
+                        ├── framework/<br>
+                        └── logs/
+                    </div>
+                </div>
+
+                <!-- Tests Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #FF2D20;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">🧪</span>
+                        <h4 style="color: #FF2D20; font-size: 1.4em; margin: 0;">tests/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Automated tests</strong> - Feature tests, unit tests
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        tests/<br>
+                        ├── Feature/<br>
+                        └── Unit/
+                    </div>
+                </div>
+
+                <!-- Vendor Directory -->
+                <div style="background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-left: 4px solid #F9322C;">
+                    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <span style="font-size: 2em; margin-right: 15px;">📦</span>
+                        <h4 style="color: #F9322C; font-size: 1.4em; margin: 0;">vendor/</h4>
+                    </div>
+                    <p style="font-size: 1.1em; color: #334155; margin-bottom: 10px;">
+                        <strong>Composer dependencies</strong> - Laravel framework and packages
+                    </p>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 15px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 0.95em;">
+                        vendor/<br>
+                        ├── laravel/<br>
+                        └── composer/
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">🎯 Key Files in Root Directory</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; margin-bottom: 40px;">
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">📄 .env</h4>
+                    <p style="font-size: 1.1em; color: #475569; line-height: 1.8;">
+                        <strong>Environment configuration</strong> - Database credentials, API keys, app settings. Never commit to Git!
+                    </p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">📄 artisan</h4>
+                    <p style="font-size: 1.1em; color: #475569; line-height: 1.8;">
+                        <strong>Command-line interface</strong> - Run migrations, create controllers, clear cache, and more
+                    </p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">📄 composer.json</h4>
+                    <p style="font-size: 1.1em; color: #475569; line-height: 1.8;">
+                        <strong>PHP dependencies</strong> - Lists all packages and their versions required by your project
+                    </p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">📄 package.json</h4>
+                    <p style="font-size: 1.1em; color: #475569; line-height: 1.8;">
+                        <strong>Node dependencies</strong> - JavaScript packages for frontend asset compilation (Vite)
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">🏗️ MVC Architecture in Laravel</h3>
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20; margin-bottom: 30px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                    <div style="background: white; padding: 30px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 15px;">📊</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">Model</h4>
+                        <p style="font-size: 1.1em; color: #334155; margin-bottom: 15px;">
+                            <strong>app/Models/</strong>
+                        </p>
+                        <p style="font-size: 1em; color: #475569;">
+                            Represents data and business logic. Interacts with the database using Eloquent ORM
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 15px;">🎨</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">View</h4>
+                        <p style="font-size: 1.1em; color: #334155; margin-bottom: 15px;">
+                            <strong>resources/views/</strong>
+                        </p>
+                        <p style="font-size: 1em; color: #475569;">
+                            Blade templates for the user interface. Displays data to users
+                        </p>
+                    </div>
+
+                    <div style="background: white; padding: 30px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 3em; margin-bottom: 15px;">🎮</div>
+                        <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.4em;">Controller</h4>
+                        <p style="font-size: 1.1em; color: #334155; margin-bottom: 15px;">
+                            <strong>app/Http/Controllers/</strong>
+                        </p>
+                        <p style="font-size: 1em; color: #475569;">
+                            Handles HTTP requests, processes data, returns views. The middleman between Models and Views
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding: 30px; background: #FEF9C3; border-radius: 10px; border-left: 4px solid #EAB308;">
+                <h4 style="color: #854D0E; margin-bottom: 15px; font-size: 1.3em;">💡 Pro Tips:</h4>
+                <ul style="font-size: 1.1em; color: #854D0E; line-height: 2; margin-left: 20px;">
+                    <li>The <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">app/</code> directory is where you'll spend most of your development time</li>
+                    <li>Use <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">php artisan route:list</code> to see all registered routes</li>
+                    <li>The <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">.env</code> file contains sensitive data - add it to <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">.gitignore</code></li>
+                    <li>Run <code style="background: #FDE68A; padding: 4px 8px; border-radius: 4px;">php artisan make:*</code> commands to scaffold new files quickly</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9: What is MVC? -->
+        <div class="slide">
+            <h2>What is MVC?</h2>
+            <p style="text-align: center; font-size: 1.3em; color: #64748b; margin-bottom: 40px;">
+                Understanding the Model-View-Controller architectural pattern
+            </p>
+
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20; margin-bottom: 40px; text-align: center;">
+                <div style="font-size: 5em; margin-bottom: 20px;">🏗️</div>
+                <h3 style="color: #FF2D20; font-size: 2em; margin-bottom: 15px;">MVC: Model-View-Controller</h3>
+                <p style="font-size: 1.3em; color: #334155; line-height: 1.8;">
+                    MVC is a <strong style="color: #FF2D20;">software design pattern</strong> that separates an application into three interconnected components.
+                    This separation helps organize code, improve maintainability, and enable parallel development.
+                </p>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">📦 The Three Components</h3>
+
+            <!-- Model Section -->
+            <div style="background: #ffffff; padding: 35px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 5px solid #FF2D20;">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div style="font-size: 4em; margin-right: 25px;">📊</div>
+                    <div>
+                        <h3 style="color: #FF2D20; font-size: 2em; margin: 0;">Model</h3>
+                        <p style="font-size: 1.2em; color: #64748b; margin: 5px 0 0 0;">The Data Layer</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">What is it?</h4>
+                    <p style="font-size: 1.2em; color: #475569; line-height: 1.8;">
+                        The Model represents the <strong style="color: #FF2D20;">data and business logic</strong> of your application.
+                        It directly manages the data, logic, and rules of the application.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">Responsibilities:</h4>
+                    <ul style="font-size: 1.1em; color: #475569; line-height: 2; margin-left: 30px;">
+                        <li>Interacts with the database (Create, Read, Update, Delete)</li>
+                        <li>Defines data structure and validation rules</li>
+                        <li>Contains business logic and data processing</li>
+                        <li>Notifies the view when data changes</li>
+                        <li>Independent of the user interface</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">Example in Laravel:</h4>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        // app/Models/User.php<br>
+                        class User extends Model<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;protected $fillable = ['name', 'email', 'password'];<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;public function posts()<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return $this->hasMany(Post::class);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- View Section -->
+            <div style="background: #ffffff; padding: 35px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 5px solid #10B981;">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div style="font-size: 4em; margin-right: 25px;">🎨</div>
+                    <div>
+                        <h3 style="color: #10B981; font-size: 2em; margin: 0;">View</h3>
+                        <p style="font-size: 1.2em; color: #64748b; margin: 5px 0 0 0;">The Presentation Layer</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">What is it?</h4>
+                    <p style="font-size: 1.2em; color: #475569; line-height: 1.8;">
+                        The View is responsible for <strong style="color: #10B981;">displaying data</strong> to the user.
+                        It presents the model's data in a format suitable for interaction (usually HTML).
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">Responsibilities:</h4>
+                    <ul style="font-size: 1.1em; color: #475569; line-height: 2; margin-left: 30px;">
+                        <li>Renders the user interface</li>
+                        <li>Displays data provided by the controller</li>
+                        <li>Contains HTML, CSS, and presentation logic</li>
+                        <li>No business logic or database access</li>
+                        <li>Updates when the model changes</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">Example in Laravel (Blade Template):</h4>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        &lt;!-- resources/views/users/profile.blade.php --&gt;<br>
+                        &lt;h1&gt;Welcome, {{ $user->name }}&lt;/h1&gt;<br>
+                        <br>
+                        @foreach($user->posts as $post)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="post"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;{{ $post->title }}&lt;/h2&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;{{ $post->content }}&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controller Section -->
+            <div style="background: #ffffff; padding: 35px; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 5px solid #F59E0B;">
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <div style="font-size: 4em; margin-right: 25px;">🎮</div>
+                    <div>
+                        <h3 style="color: #F59E0B; font-size: 2em; margin: 0;">Controller</h3>
+                        <p style="font-size: 1.2em; color: #64748b; margin: 5px 0 0 0;">The Logic Layer</p>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">What is it?</h4>
+                    <p style="font-size: 1.2em; color: #475569; line-height: 1.8;">
+                        The Controller acts as an <strong style="color: #F59E0B;">intermediary</strong> between Model and View.
+                        It processes user input, manipulates data via the Model, and returns the appropriate View.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">Responsibilities:</h4>
+                    <ul style="font-size: 1.1em; color: #475569; line-height: 2; margin-left: 30px;">
+                        <li>Receives user requests (HTTP requests)</li>
+                        <li>Processes input data and validates it</li>
+                        <li>Calls the appropriate Model methods</li>
+                        <li>Selects the View to display</li>
+                        <li>Acts as the middleman between Model and View</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 style="color: #334155; font-size: 1.4em; margin-bottom: 15px;">Example in Laravel:</h4>
+                    <div class="code-block" style="background: #1e293b; color: #e2e8f0; padding: 25px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 1.1em;">
+                        // app/Http/Controllers/UserController.php<br>
+                        class UserController extends Controller<br>
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;public function show($id)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Get data from Model<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$user = User::findOrFail($id);<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Return View with data<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return view('users.profile', compact('user'));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">🔄 How MVC Works Together</h3>
+            <div style="background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%); padding: 40px; border-radius: 12px; border: 2px solid #FF2D20; margin-bottom: 40px;">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <p style="font-size: 1.3em; color: #334155; line-height: 2; margin-bottom: 30px;">
+                        The MVC flow in a typical web request:
+                    </p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #3B82F6;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #3B82F6; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">1</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>User Request:</strong> User clicks a link or submits a form (e.g., "Show user profile")
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; font-size: 2em; color: #FF2D20;">↓</div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #F59E0B;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #F59E0B; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">2</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>Controller Receives:</strong> Routes the request to the appropriate controller method
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; font-size: 2em; color: #FF2D20;">↓</div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #FF2D20;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #FF2D20; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">3</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>Controller Calls Model:</strong> Requests data from the Model (e.g., fetch user from database)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; font-size: 2em; color: #FF2D20;">↓</div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #FF2D20;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #FF2D20; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">4</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>Model Returns Data:</strong> Retrieves data from database and returns it to Controller
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; font-size: 2em; color: #FF2D20;">↓</div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #10B981;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #10B981; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">5</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>Controller Passes to View:</strong> Sends data to the View for rendering
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; font-size: 2em; color: #FF2D20;">↓</div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #10B981;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #10B981; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">6</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>View Renders HTML:</strong> Displays the data in a formatted HTML page
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; font-size: 2em; color: #FF2D20;">↓</div>
+
+                    <div style="background: white; padding: 25px; border-radius: 10px; border-left: 5px solid #3B82F6;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="background: #3B82F6; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3em;">7</div>
+                            <p style="font-size: 1.2em; color: #334155; margin: 0;">
+                                <strong>Response to User:</strong> Browser displays the rendered HTML page to the user
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="color: #FF2D20; text-align: center; margin-bottom: 30px;">✨ Benefits of MVC</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 30px;">
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🔧 Separation of Concerns</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Each component has a distinct responsibility, making code more organized</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">♻️ Code Reusability</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Models and Controllers can be reused across different views</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">👥 Parallel Development</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Multiple developers can work on Model, View, and Controller simultaneously</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🧪 Easier Testing</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Components can be tested independently without affecting others</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">🔄 Maintainability</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Changes in one component don't affect others, easier to update</p>
+                </div>
+
+                <div style="background: #f8fafc; padding: 25px; border-radius: 12px; border-left: 4px solid #FF2D20;">
+                    <h4 style="color: #FF2D20; margin-bottom: 15px; font-size: 1.3em;">📈 Scalability</h4>
+                    <p style="font-size: 1.1em; color: #475569;">Easier to scale and add new features to large applications</p>
+                </div>
+            </div>
+
+            <div style="padding: 30px; background: #FEF9C3; border-radius: 10px; border-left: 4px solid #EAB308;">
+                <h4 style="color: #854D0E; margin-bottom: 15px; font-size: 1.3em;">💡 Key Takeaway:</h4>
+                <p style="font-size: 1.2em; color: #854D0E; line-height: 1.8; margin: 0;">
+                    MVC is not just a Laravel concept - it's a fundamental design pattern used in many frameworks (Django, Ruby on Rails, ASP.NET MVC).
+                    Understanding MVC will help you work with any modern web framework!
+                </p>
             </div>
         </div>
     </div>
 
     <div class="slide-counter">
-        <span id="current-slide">1</span> / <span id="total-slides">1</span>
+        <span id="current-slide">1</span> / <span id="total-slides">9</span>
     </div>
 
     <div class="navigation">
